@@ -1,0 +1,20 @@
+.content {
+  flex: 1;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: 1px solid;
+  border-color: #3cb8d7;
+  padding: 8px;
+}
+
+.label {
+  font-size: 2rem;
+}
+
+.body {
+  border: #61dafb 1px solid;
+  padding: 5px;
+  height: 200px;
+}

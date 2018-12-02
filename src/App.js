@@ -1,28 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Content from './components/Content/Content'
+import FunctionComponent from './examples/FunctionComponent'
+import ClassComponent from './examples/ClassComponent'
+import FunctionComponentWithHook from './examples/FunctionComponentWithHook'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+const App =  () =>  {
+  return (
+    <div className="App">
+      <Content label="Function component">
+        <FunctionComponent name="Hakata"></FunctionComponent>
+      </Content>
+      <Content label="Stateful class component">
+        <ClassComponent></ClassComponent>
+      </Content>
+      <Content label="Stateful function component with Hook">
+        <FunctionComponentWithHook></FunctionComponentWithHook>
+      </Content>
+    </div>
+  );
 }
 
 export default App;
